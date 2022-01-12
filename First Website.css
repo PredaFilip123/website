@@ -1,0 +1,258 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  position: relative;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-family: "Uncial Antiqua", cursive;
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 5rem;
+  text-align: center;
+  line-height: 40px;
+  text-shadow: white;
+  font-weight: bold;
+}
+
+.banner {
+  height: 90vh;
+  width: 100%;
+}
+
+.logoFP {
+  display: block;
+  width: 75px;
+  height: 75px;
+  transform: translateX(-200px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logoFP:hover,
+.logoFP:focus {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 4px white);
+}
+
+.navbar {
+  height: 9vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(-45deg, #d5eebb, #7fc8a9);
+}
+
+.banner {
+  width: 100%;
+  height: 91vh;
+  background-image: linear-gradient(
+      rgba(0, 128, 128, 0.3),
+      rgba(0, 128, 128, 0.3)
+    ),
+    url(Images/Image\ Background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-text ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0px 35px;
+}
+
+.navbar-text a {
+  text-decoration: none;
+  color: teal;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.navbar-text a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: 0.5s;
+}
+
+.navbar-text a:hover {
+  color: white;
+}
+
+.navbar-text a:hover::after {
+  width: 100%;
+}
+
+.description {
+  position: absolute;
+  top: 30%;
+  transform: translateX(60%);
+  height: 250px;
+  width: 900px;
+}
+
+.CTA {
+  position: absolute;
+  top: 65%;
+  transform: translate(700px, -30px);
+  height: 90px;
+  width: 500px;
+}
+
+.CTA button {
+  border: 2px solid #7fc8a9;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  margin-left: 4rem;
+  background: transparent;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 200ms ease-in;
+}
+
+.CTA button:hover {
+  transform: translateY(-10px);
+  background-color: #7fc8a9;
+}
