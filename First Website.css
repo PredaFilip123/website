@@ -102,7 +102,6 @@ section {
 }
 body {
   line-height: 1;
-  position: relative;
 }
 ol,
 ul {
@@ -124,22 +123,24 @@ table {
   border-spacing: 0;
 }
 
-h1 {
-  font-family: "Uncial Antiqua", cursive;
+.description h1 {
+  font-family: 'Black Ops One', cursive;
   font-size: 5rem;
   color: rgba(255, 255, 255, 0.9);
-  text-align: center;
+  text-align:center;
+  -webkit-text-stroke: 2.5px #7fc8a9;
 }
 
-h2 {
+.description h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   color: rgba(255, 255, 255, 0.9);
-  margin-top: 5rem;
+  margin-top: 4rem;
   text-align: center;
   line-height: 40px;
   text-shadow: white;
   font-weight: bold;
+  width: 55%;
 }
 
 .banner {
@@ -149,9 +150,8 @@ h2 {
 
 .logoFP {
   display: block;
-  width: 75px;
-  height: 75px;
-  transform: translateX(-200px);
+  width: 70px;
+  height: 70px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -164,27 +164,29 @@ h2 {
 }
 
 .navbar {
-  height: 9vh;
+  height: 70px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-image: linear-gradient(-45deg, #d5eebb, #7fc8a9);
+  border-bottom:2px solid #7fc8a9;
 }
 
 .banner {
   width: 100%;
-  height: 91vh;
+  height: 90vh;
   background-image: linear-gradient(
       rgba(0, 128, 128, 0.3),
       rgba(0, 128, 128, 0.3)
     ),
-    url(Images/Image\ Background.jpg);
+    url(https://github.com/PredaFilip123/website/blob/Atestat/Image%20Background.jpg?raw=true);
   background-size: cover;
   background-position: center;
 }
 
 .navbar-text ul {
   list-style: none;
+  margin-left:10rem;
 }
 
 nav ul li {
@@ -223,28 +225,33 @@ nav ul li {
 
 .description {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   top: 30%;
-  transform: translateX(60%);
   height: 250px;
-  width: 900px;
+  width: 100%;
 }
 
 .CTA {
+  display:flex;
+  justify-content:center;
+  align-items:center;
   position: absolute;
   top: 65%;
-  transform: translate(700px, -30px);
-  height: 90px;
-  width: 500px;
+  height: 9rem;
+  width: 100%;
 }
 
 .CTA button {
   border: 2px solid #7fc8a9;
-  border-radius: 25px;
   padding: 10px 20px;
+  border-radius: 25px;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  font-size: 25px;
-  margin-left: 4rem;
+  font-size: 28px;
+  margin-left: 3rem;
   background: transparent;
   font-weight: bold;
   color: white;
@@ -253,6 +260,13 @@ nav ul li {
 }
 
 .CTA button:hover {
-  transform: translateY(-10px);
-  background-color: #7fc8a9;
+  transform: translateY(-7px);
+  filter: drop-shadow(0px 0px 4px #7fc8a9);
+  background-color:#7fc8a9;
+}
+
+.CTA button a
+{
+  text-decoration:none;
+  color:white;
 }
