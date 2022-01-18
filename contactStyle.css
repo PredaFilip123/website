@@ -126,13 +126,13 @@ table {
 
 body
 {
-    background-image: linear-gradient(46deg, rgb(23, 151, 151), rgba(127, 200, 169, 0.80));
+    background-image: linear-gradient(46deg, rgba(23, 151, 151,1), rgba(127, 200, 169, 0.8));
 }
 
 .logoFP {
     display: block;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 4rem;
+    height: 4rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -152,14 +152,15 @@ body
     background-image: linear-gradient(-45deg, #d5eebb, #7fc8a9);
   }
 
+
   .navbar-text ul {
     list-style: none;
-    margin-left: 20rem;
+    margin-left:10rem;
   }
   
   nav ul li {
     display: inline-block;
-    margin: 0px 1.5rem;
+    margin: 0px 35px;
   }
   
   .navbar-text a {
@@ -167,7 +168,7 @@ body
     color: teal;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.45rem;
     position: relative;
     text-transform: uppercase;
   }
@@ -199,11 +200,23 @@ body
     align-items: center;
   }
 
+  .boxshadow
+  {
+    height: 95vh;
+    background-color: red; 
+  }
+
+
+
 #contactForm p
   {
       display: inline-block;
-      margin:1rem 0 1rem 0;
-      color: white;
+      margin-top: 1.5rem;
+      color: teal;
+      font-size: 1.25rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
   }
 
   #contactForm div
@@ -217,24 +230,92 @@ body
       height: 60vh;
       width: 70vw;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      padding: 2rem 1rem;
+      align-items: center;  
       position: relative;
       border-radius: 5rem;
+      background: white;
+      background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+      overflow: hidden;
+      box-shadow: 15px 15px 7.5px rgba(0, 128, 128,0.80);
+  }
+
+#contactUs
+  {
+    background-image: linear-gradient(45deg, rgba(127, 200, 169, 0.8), rgba(23, 151, 151,1));
+      position: absolute;
+      width: 100%;
+      height: 12%;
+      border-top-left-radius:5rem;
+      border-top-right-radius: 5rem;
+      top: 0;
+      right: 0;
+      text-align: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      color:rgba(255, 255, 255, 0.9);
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+
+  #contactUs p
+  {
+      color: white;
   }
 
   #contactForm .message 
   {
-      display: block;
+      justify-self: flex-end;
       align-self: flex-end;
-      justify-self: center;
-      position: absolute;
-      margin-right: 15%;
+     
+  }
+
+  .personalInfo
+  {
+    background-color: red;
+    width: 50%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .personalInfo p
+  {
+    
+  }
+
+  .yourMessage
+  {
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   #contactForm input
   {
-      margin-left: 1rem;
+      margin-left: 2rem;
+      border-radius: 4rem;
+      border:2px solid teal;
+      height: 2rem;
+  }
+  
+  .message
+{
+  display: inline;
+  background-color: red;
+}
+  .message input
+  {
+    height: 50rem;
+    width: 30rem;
   }
