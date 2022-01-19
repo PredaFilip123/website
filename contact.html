@@ -38,20 +38,22 @@
     <fieldset id="contactForm">
         <div id="contactUs"><p>Contact Us</p></div>
         <section class="personalInfo">
-            <div><p>First Name:</p><input type="text" placeholder="Type Here"  required
-                minlength="30" maxlength="8" size="30"></input></div>
-                 <div><p>Second Name:</p><input type="text" placeholder="Type Here" required
-                minlength="30" maxlength="8" size="30"></input></div>
-                 <div><p>E-mail:</p><input type="text" placeholder="Type Here" minlength="30" maxlength="8" size="30"></input></div>
-                 <div><p>Telephone:</p><input type="text" placeholder="Type Here" required
-                minlength="30" maxlength="8" size="30"></input></div>
+            <div>
+                <p>First Name*</p><input type="text" placeholder="Type Here"  required
+                minlength="1" maxlength="30" size="30"></input>
+                 <p>Last Name*</p><input type="text" placeholder="Type Here" required
+                minlength="1" maxlength="30" size="30"></input>
+                 <p>E-mail*</p><input type="text" placeholder="Type Here" minlength="20" maxlength="40" size="30"></input>
+                 <p>Telephone</p><input type="text" placeholder="Type Here" required
+                minlength="10" maxlength="20" size="20"></input>
+            </div>
         </section>
         <section class="yourMessage">
-        <div class="message"><p >Message:</p><input type="text" placeholder="Type Here" required
-       minlength="30" maxlength="8" size="30"></input></div>
+        <div class="message"><p >How can we help?*</p><input type="text" placeholder="Type Here" required
+       minlength="50" maxlength="500" size="10"></input></div>
+       <button type="button">Send</button>
        </section>
     </fieldset>
-    <div class="boxshadow"></div>
     </section>
     
 </body>
