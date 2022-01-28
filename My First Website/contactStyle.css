@@ -1,0 +1,384 @@
+@import url(style.css);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  position: relative;
+  background-attachment: fixed;
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.logoFP {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.logoFP:hover,
+.logoFP:focus {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 4px white);
+}
+
+.navbar {
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(-45deg, #d5eebb, #7fc8a9);
+  border-bottom: 2px solid #7fc8a9;
+}
+
+.navbar-text ul {
+  list-style: none;
+  margin-left: 10rem;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0px 35px;
+}
+
+.navbar-text a {
+  text-decoration: none;
+  color: teal;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.navbar-text a::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: 0.5s;
+}
+
+.navbar-text a:hover {
+  color: white;
+}
+
+.navbar-text a:hover::after {
+  width: 100%;
+}
+
+.container {
+  height: 92.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(0, 128, 128, 0.1),
+      rgba(0, 128, 128, 0.1)
+    ),
+    url(https://images.pexels.com/photos/4913769/pexels-photo-4913769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contactForm p {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: teal;
+  font-size: 1.25rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+#contactForm div {
+  margin-left: 5rem;
+}
+
+#contactForm {
+  height: 60%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  border-radius: 2rem;
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.2)
+  );
+  overflow: hidden;
+}
+
+#contactUs {
+  background-image: linear-gradient(
+    45deg,
+    rgba(127, 200, 169, 0.8),
+    rgba(23, 151, 151, 1)
+  );
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  right: 0;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#contactUs p {
+  color: white;
+  transform: translateY(-0.5rem);
+}
+
+.personalInfo {
+  width: 50%;
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personalInfo div {
+  transform: translate(-3rem, -3rem);
+}
+
+.personalInfo textarea {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+#yourMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  height: 88%;
+  padding-bottom: 1rem;
+}
+
+#contactForm textarea {
+  border-radius: 5px;
+  border: 2px solid teal;
+  height: 30px;
+  display: block;
+  width: 25rem;
+}
+
+#contactForm .message textarea {
+  height: 21rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.message {
+  width: 90%;
+  height: 85%;
+  padding-left: 1rem;
+  transform: translate(-3.7rem, 1rem);
+}
+
+.message p {
+  margin-bottom: 1rem;
+}
+
+#yourMessage button {
+  position: absolute;
+  bottom: 20px;
+  text-transform: uppercase;
+  background-color: none;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 120px;
+  text-align: center;
+  background: teal;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 2px 6px 2px 6px;
+}
+
+#yourMessage button:hover {
+  filter: drop-shadow(0px 0px 4px white);
+  cursor: pointer;
+}
+
+textarea[type="text"] {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 2px 10px 2px 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+textarea[type="text"]:hover,
+textarea[type="text"]:focus {
+  background-color: rgb(189, 228, 212);
+  outline: none;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 500px;
+}
+
+.wave .shape-fill {
+  fill: rgba(127, 200, 169, 0.9);
+}
+
+@media (max-height: 1000px) {
+  #contactForm {
+    width: 80%;
+    height: 85%;
+  }
+}
