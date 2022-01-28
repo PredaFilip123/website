@@ -179,10 +179,10 @@ table {
   width: 100%;
   height: 89.9vh;
   background-image: linear-gradient(
-      rgba(0, 128, 128, 0.3),
+      rgba(0, 128, 128, 0.35),
       rgba(0, 128, 128, 0.3)
     ),
-    url(https://github.com/PredaFilip123/website/blob/Atestat/Image%20Background.jpg?raw=true);
+    url("https://github.com/PredaFilip123/website/blob/Atestat/My%20First%20Website/Image%20Background.jpg?raw=true");
   background-size: cover;
   background-position: center;
 }
