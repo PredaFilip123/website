@@ -1,4 +1,4 @@
-html,
+ html,
 body,
 div,
 span,
@@ -126,12 +126,12 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
+} 
 
 .logoFP {
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 3rem;
+  height: 3rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -144,7 +144,7 @@ table {
 }
 
 .navbar {
-  height: 75px;
+  height: 3rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -167,7 +167,7 @@ nav ul li {
   color: teal;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 0.90rem;
   position: relative;
   text-transform: uppercase;
 }
@@ -192,7 +192,7 @@ nav ul li {
 }
 
 .container {
-  height: 92.5%;
+  height: 92%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,7 +298,7 @@ nav ul li {
 }
 
 #contactForm .message textarea {
-  height: 21rem;
+  height: 26rem;
   width: 100%;
   margin-bottom: 1rem;
 }
@@ -316,20 +316,20 @@ nav ul li {
 
 #yourMessage button {
   position: absolute;
-  bottom: 20px;
+  bottom: 1.5rem;
   text-transform: uppercase;
   background-color: none;
   margin-left: auto;
   margin-right: auto;
-  height: 50px;
-  width: 120px;
+  height: 3.5rem;
+  width: 8rem;
   text-align: center;
   background: teal;
   color: white;
   border: 2px solid transparent;
   border-radius: 5px;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   padding: 2px 6px 2px 6px;
 }
@@ -377,7 +377,34 @@ textarea[type="text"]:focus {
 
 @media (max-height: 1000px) {
   #contactForm {
-    width: 80%;
-    height: 85%;
+    width: 85%;
+    height: 80%;
   }
+
+  #contactForm .message textarea
+  {
+    height: 20rem;
+    width: 100%;
+  }
+
+  #yourMessage button
+  {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    bottom:1rem
+  }
+
+  .personalInfo div 
+  {
+    transform: translate(-3rem, -1rem);
+  }
+
+  .navbar
+  {
+    height: 3rem;
+  }
+
+  
+
 }
